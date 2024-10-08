@@ -2,9 +2,11 @@
 
 This tiny package provides a few functions that help save time while plotting with CairoMakie. Current functions list: 
 
-yloglines, xloglines, xyloglines,ylogscatter,xlogscatter,xylogscatter.
+yloglines, xloglines, xyloglines, ylogscatter, xlogscatter, xylogscatter.
 
-methods for lines and scatter taking X::Vector, Y::Matrix and plotting each column of Y against X. 
+There are also functions that can be used to format tick labels:
+
+float_scientific_LaTeX, int_LaTeX, int_powers_of_10_LaTeX, int_powers_of_2_LaTeX, int_power_of_10_scientific_LaTeX.
 
 # Installation
 

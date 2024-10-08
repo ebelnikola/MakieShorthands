@@ -1,7 +1,8 @@
 name = "MakieShorthands"
-uuid="065fe8b4-5871-437e-bb98-3c92c1096b7d"
+uuid = "065fe8b4-5871-437e-bb98-3c92c1096b7d"
 authors = ["Nikolay Ebel"]
 version = "0.1.0"
 
 [deps]
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
