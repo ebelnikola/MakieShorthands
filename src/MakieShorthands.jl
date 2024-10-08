@@ -43,5 +43,25 @@ module MakieShorthands
         scatter!(ax, data...)
         return fig
     end
+
+    import CairoMakie: lines, scatter
+    function lines(X::Vector, Y::Matrix)
+        fig = Figure()
+        ax = Axis(fig[1, 1])
+        for i in axes(Y, 2)
+            lines!(ax, X, Y[:, i])
+        end
+        return fig
+    end
+
+    function scatter(X::Vector, Y::Matrix)
+        fig = Figure()
+        ax = Axis(fig[1, 1])
+        for i in axes(Y, 2)
+            scatter!(ax, X, Y[:, i])
+        end
+        return fig
+    end
+
     
 end
